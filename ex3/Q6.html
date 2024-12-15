@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="red">Red</button>
+    <button class="green">Green</button>
+    <button class="blue">Blue</button>
+    <button class="red">Red</button>
+    <button class="red">Red</button>
+    <button class="red">Red</button>
+
+
+    <script>
+        const myButtons = document.getElementsByTagName("button");
+        console.log(myButtons)
+
+        function checkForBtnWithClassRed(){
+            for(btn of myButtons){
+                if(btn.matches(".red")){
+                    console.log(btn.textContent)
+                }
+            }
+        }
+
+        checkForBtnWithClassRed()
+</script>
+</body>
+</html>

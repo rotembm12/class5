@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sdfsdfsdf</title>
+    <style>
+        body {
+            padding: 10px;
+        }
+    </style>
+   
+</head>
+<body >
+    
+    <h1 id="title">Hello world</h1>
+    <h2 >Hello world</h2>
+    <h3 >Hello world</h3>
+    <h4 class="bold-text">Hello world</h4>
+    
+    <table data-type="table">
+        <tr>
+            <td>
+                <input type="text">
+            </td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>asdas</td>
+            <td>asdasשדגכדשגכדשגכדגשכשדכשדגכגד</td>
+        </tr>
+    </table>
+
+    <input type="text">
+    <input type="text">
+
+
+    <script>
+        // document.body.style.padding = "50px";
+        
+        // setTimeout(
+        //     function changeColor() {
+        //         document.body.style.color = "red";
+        //     },
+        //     3000
+        // )
+
+        // setInterval(() => {
+        //     for(let elem of document.body.children) {
+        //         elem.style.fontSize = Math.random() * 100 +"px";
+        //         const colors = ["red", "green", "yellow"];
+        //         const index = Math.floor(Math.random() * colors.length);
+        //         elem.style.backgroundColor = colors[index];
+
+        //         function alertElement() {
+        //             alert(elem)
+        //         }
+
+        //         elem.addEventListener("click",alertElement)
+        //     }
+        // }, 2000)
+      
+        // console.log(document.body.children)
+    </script>
+
+
+
+
+    <script>
+        const titleElement = document.getElementById("title")
+        const boldTextElements = document.getElementsByClassName("bold-text")
+
+
+        const inputs = document.getElementsByTagName("input");
+        for(let input of inputs) {
+            console.log(input.closest("[data-type='table']"))
+        }
+    </script>    
+</body>
+</html>
